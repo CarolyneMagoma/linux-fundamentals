@@ -13,7 +13,7 @@ On this task we were to create a structure of directories log, backup,script,con
 on this task, we created files on the logs,scripts, and config directories.
 on these Directories we created the app.log, deploy.sh and app.conf files as shown on the diretory tree below.
 
-![alt text](image2.png)
+![alt text](/screenshots/image2.png)
 
 
 # Task 3 - Add Sample Content
@@ -30,7 +30,7 @@ INFO User login successful
 we created a backup of app.conf file in the configs folder to backup directory,
 to create a backup we used the "cp" command 
 
-![alt text](image3.png)
+![alt text](/screenshots/image3.png)
 
 
 # PART 2 -File Viewing & Log Investigation
@@ -47,18 +47,18 @@ grep "ERROR" - searches for ERROR entries
 {} - represents the found files
 \; - ends the execute statement.
 
-![alt text](image4.png)
+![alt text](/screenshots/image4.png)
 
 we searched the warning entries on the app.log file. 
 
-![alt text](image5.png)
+![alt text](/screenshots/image5.png)
 
 
 # Task 6 - Monitor Logs Live
 
 In this task we used the command "tail -f app.log " and added aome content to that file as we can see the content is being monitored in real life.
 
-![alt text](image6.png)
+![alt text](/screenshots/image6.png)
 
 
 # PART 3 - Permissions & Ownership
@@ -74,7 +74,53 @@ we used the "chmod +x deploy.sh" this gives the file the execute command.
 # Task 8 - Secure Config File (configs/app.conf)
 
 We gave this file the read and write permissions by running the "chmod 600 app.conf" command.
-![alt text](image7.png)
+
+![alt text](/screenshots/image7.png)
+
+# Task 9 - Explain Permissions
+
+Explain:
+755 - this means that the owner of the file has full permissions, the group has the read and execute permissions and the other users also have the read and execute permissions.
+644 - this shows that the ownner has the read and write permissions, the group and other users have the read permissions only.
+600 - this illustrates that the owner of the file has the read ans write permissions and the rest of the user have no permissions to perform any action.
+
+# PART 4 - Process Management
+# Task 10 - Start Background Process 
+
+We have created a process on the background by running "sleep 500 &".
+
+![alt text](/screenshots/image8.png)
+
+
+as we can see on the image below, the process was created.
+
+![alt text](/screenshots/image9.png)
+
+
+
+# Task 11 - Identify Process
+
+In this task we have to find the process ID(PID) and the process name. we used the command "ps aux | grep sleep "
+from the results we can see the process ID is "11666i" and the process name is "sleep"
+
+![alt text](/screenshots/image10.png)
+
+
+
+# Task 12 - Terminate Process
+
+we  have to stop the sleep process we created earlier, we use the kill -9 <process id> command.
+
+# Task 13 - Monitor System
+ 
+By using the top command we are able to see the total number of processes the cpu usage and memeory usage.
+
+![alt text](/screenshots/image11.png)
+
+
+
+
+
 
 
 
