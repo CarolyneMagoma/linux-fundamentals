@@ -1,0 +1,6 @@
+May 12 09:00:01 sshd[101]: Accepted password for ubuntu
+May 12 09:02:15 sshd[102]: Failed password for root
+May 12 09:05:22 sshd[103]: Failed password for admin
+May 12 09:10:18 sshd[104]: Accepted password for devops
+May 12 09:12:45 sshd[105]: Failed password for testuser
+
