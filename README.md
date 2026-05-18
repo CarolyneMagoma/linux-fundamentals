@@ -4,14 +4,13 @@
 
 # Task 1 - Create Project Structure
 
-On this task we were to create a structure of directories log, backup,script,configs, and temp.
+On this task we created a structure with log, backup,script,configs, and temp directories
 
 ![alt text](/screenshots/image1.png)
 
 # Task 2 -Create Files
 
-on this task, we created files on the logs,scripts, and config directories.
-on these Directories we created the app.log, deploy.sh and app.conf files as shown on the diretory tree below.
+On the Directories we created earlier the app.log, deploy.sh and app.conf were created on there respective directories as shown on the directory tree below.
 
 ![alt text](/screenshots/image2.png)
 
@@ -20,14 +19,14 @@ on these Directories we created the app.log, deploy.sh and app.conf files as sho
 
 On app.log file we added some contents.
 
-INFO Server started
-WARNING Disk almost  full
-ERROR Database connection failed
-INFO User login successful
+INFO Server started \
+WARNING Disk almost  full \
+ERROR Database connection failed \
+INFO User login successful \
 
 # Task 4 - Copy Backup
 
-we created a backup of app.conf file in the configs folder to backup directory,
+We created a backup of app.conf file in the configs folder to backup directory,
 to create a backup we used the "cp" command 
 
 ![alt text](/screenshots/image3.png)
@@ -130,56 +129,57 @@ To see the hostaneme of the server we are using we run the command "hostname"
 
 # Task 15 - Test Connectivity
 To test our linux machine internet access we pinged the google.com domain and as we can see it reachable sonce we have response from that domain.
-![alt text](image.png)
+![alt text](/screenshots/image.png)
 
 # Task 16 - Verify Listening Ports
 we used the command ss -tulnp to verif listening ports
 
-![alt text](image-1.png)
+![alt text](/screenshots/image-1.png)
 
 # PART 6 - SSH & SCP
 # Task 17 - Remote Access (Local to Remote)
 
-![alt text](image-2.png)
-![alt text](image-3.png)
+![alt text](/screenshots/image-2.png)
+![alt text](/screenshots/image-3.png)
 
 
 # Task 18 -Secure  File Transfer
 
-![alt text](image-4.png)
-![alt text](image-5.png)
+![alt text](/screenshots/image-4.png)
+![alt text](/screenshots/image-5.png)
 
 # Task 19 - Retrieve File (Remote to Local)
 
-![alt text](image-6.png)
+![alt text](/screenshots/image-6.png)
 
-![alt text](image-7.png)
+![alt text](/screenshots/image-7.png)
+
 # PART 7 - Disk & System  Information
 
 # Task 20 - Check  System Resources 
 memory usage
-![alt text](image-8.png)
+![alt text](/screenshots/image-8.png)
 Disk usage
-![alt text](image-9.png)
+![alt text](/screenshots/image-9.png)
 uptime
-![alt text](image-10.png)
+![alt text](/screenshots/image-10.png)
 linux version
-![alt text](image-11.png)
+![alt text](/screenshots/image-11.png)
 
 # Task 21 - Analyze Storage
-![alt text](image-12.png)
-![alt text](image-13.png)
+![alt text](/screenshots/image-12.png)
+![alt text](/screenshots/image-13.png)
 
 
 # PART 8 - Compression & Backup
 
 # Task 22 - Create Backup Archive
 
-![alt text](image-14.png)
+![alt text](/screenshots/image-14.png)
 
 # Task 23 - Extract
 
-![alt text](image-15.png)
+![alt text](/screenshots/image-15.png)
 
 
 # LINUX_LAB
@@ -194,6 +194,72 @@ in this task we have been asked to find all the .log files that we created at th
 
 ![alt text](image.png)
 
+# PART 2 - LOCATE COMMAND
+# Task 3
+we are to use the locate command to find a file auth.log
+![alt text](image-3.png)
+# PART 3 - GREP COMMAND
+# Task 4
+
+In this task we are to find error message in app.log file.
+
+![alt text](image-1.png)
+
+# Task 5
+we are to find the warning text inside the app.log file.
+![alt text](image-2.png)
+
+# Task 6
+
+we are to count the number of errors using the wc command by piping
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+# PART 4 - AWK COMMAND
+
+# Task 7
+on this task we are to print the timestamp in the file app.log file. 
+
+![alt text](image-2.png)
+
+# Task 8
+
+# Task 9
+
+On this task we rae to extract disk usage percentage from system.log
+
+![alt text](image-3.png)
+
+# PART 5 - PIPING
+
+# Task 10
+
+![alt text](image-4.png)
+
+# Task 11
+
+![alt text](image-5.png)
+
+# Task 12
+
+![alt text](image-6.png)
+
+# PART 6 - XARGS
+
+# Task 13
+
+![alt text](image-7.png)
+
+# Task 14
 
 
+# Task 15
+
+
+# ADVANCED CHALLENGE
+
+The server is unstable.
+identify disk issue
 
