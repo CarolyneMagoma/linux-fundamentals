@@ -192,37 +192,38 @@ linux version
 # Task 1 
 in this task we have been asked to find all the .log files that we created at the beginning of the lab, we were to use the find command to do so.
 
-![alt text](image.png)
+![alt text](/screenshots/lab_screensots/image1.png)
 
 # PART 2 - LOCATE COMMAND
 # Task 3
 we are to use the locate command to find a file auth.log
-![alt text](image-3.png)
+
+![alt text](/screenshots/lab_screensots/image4.png)
 # PART 3 - GREP COMMAND
 # Task 4
 
 In this task we are to find error message in app.log file.
 
-![alt text](image-1.png)
+![alt text](/screenshots/lab_screensots/image2.png)
 
 # Task 5
 we are to find the warning text inside the app.log file.
-![alt text](image-2.png)
+![alt text](/screenshots/lab_screensots/image3.png)
 
 # Task 6
 
 we are to count the number of errors using the wc command by piping
 
-![alt text](image.png)
+![alt text](/screenshots/lab_screensots/image5.png)
 
-![alt text](image-1.png)
+![alt text](/screenshots/lab_screensots/image6.png)
 
 # PART 4 - AWK COMMAND
 
 # Task 7
 on this task we are to print the timestamp in the file app.log file. 
 
-![alt text](image-2.png)
+![alt text](/screenshots/lab_screensots/image7.png)
 
 # Task 8
 
@@ -230,27 +231,27 @@ on this task we are to print the timestamp in the file app.log file.
 
 On this task we rae to extract disk usage percentage from system.log
 
-![alt text](image-3.png)
+![alt text](/screenshots/lab_screensots/image8.png)
 
 # PART 5 - PIPING
 
 # Task 10
 
-![alt text](image-4.png)
+![alt text](/screenshots/lab_screensots/image9.png)
 
 # Task 11
 
-![alt text](image-5.png)
+![alt text](/screenshots/lab_screensots/image10.png)
 
 # Task 12
 
-![alt text](image-6.png)
+![alt text](/screenshots/lab_screensots/image11.png)
 
 # PART 6 - XARGS
 
 # Task 13
 
-![alt text](image-7.png)
+![alt text](/screenshots/lab_screensots/image12.png)
 
 # Task 14
 
