@@ -117,14 +117,82 @@ By using the top command we are able to see the total number of processes the cp
 
 ![alt text](/screenshots/image11.png)
 
+# PART 5 - Networking & Connectivity
+
+# Task 14 - Find Server IP
+By the use of "ip a" command we are able to see an ip address 
+![alt text](/screenshots/image12.png)
+
+To see the hostaneme of the server we are using we run the command "hostname"
+
+![alt text](/screenshots/image13.png)
 
 
+# Task 15 - Test Connectivity
+To test our linux machine internet access we pinged the google.com domain and as we can see it reachable sonce we have response from that domain.
+![alt text](image.png)
+
+# Task 16 - Verify Listening Ports
+we used the command ss -tulnp to verif listening ports
+
+![alt text](image-1.png)
+
+# PART 6 - SSH & SCP
+# Task 17 - Remote Access (Local to Remote)
+
+![alt text](image-2.png)
+![alt text](image-3.png)
 
 
+# Task 18 -Secure  File Transfer
+
+![alt text](image-4.png)
+![alt text](image-5.png)
+
+# Task 19 - Retrieve File (Remote to Local)
+
+![alt text](image-6.png)
+
+![alt text](image-7.png)
+# PART 7 - Disk & System  Information
+
+# Task 20 - Check  System Resources 
+memory usage
+![alt text](image-8.png)
+Disk usage
+![alt text](image-9.png)
+uptime
+![alt text](image-10.png)
+linux version
+![alt text](image-11.png)
+
+# Task 21 - Analyze Storage
+![alt text](image-12.png)
+![alt text](image-13.png)
 
 
+# PART 8 - Compression & Backup
+
+# Task 22 - Create Backup Archive
+
+![alt text](image-14.png)
+
+# Task 23 - Extract
+
+![alt text](image-15.png)
 
 
+# LINUX_LAB
+
+![alt text](image.png)
+
+
+# PART 1 - FIND COMMAND
+
+# Task 1 
+in this task we have been asked to find all the .log files that we created at the beginning of the lab, we were to use the find command to do so.
+
+![alt text](image.png)
 
 
 
