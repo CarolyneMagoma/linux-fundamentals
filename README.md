@@ -226,7 +226,7 @@ on this task we are to print the timestamp in the file app.log file.
 ![alt text](/screenshots/lab_screensots/image7.png)
 
 # Task 8
-
+![alt text](/screenshots/lab_screensots/image13.png)
 # Task 9
 
 On this task we rae to extract disk usage percentage from system.log
@@ -254,13 +254,100 @@ On this task we rae to extract disk usage percentage from system.log
 ![alt text](/screenshots/lab_screensots/image12.png)
 
 # Task 14
-
+![alt text](/screenshots/lab_screensots/image14.png)
 
 # Task 15
 
+![alt text](/screenshots/lab_screensots/image15.png)
 
 # ADVANCED CHALLENGE
 
 The server is unstable.
 identify disk issue
+
+
+# Scenario questions
+
+# File Management Scenarios
+
+1. I created a file in the wrong directory by accident, how would i move the fie to the correct directory?
+
+![alt text](image.png)
+
+2. A team needs a folder stracture of logs, scripts and backup, how would all folders be created using one command.
+
+![alt text](image-1.png)
+
+3. A backup file is consuming a lot of space, how would you locate, copy to backup directory and delete the original?
+-locate file
+
+![alt text](image-3.png)
+![alt text](image-2.png)
+
+-copy to backup
+
+![alt text](image-4.png)
+
+-delete the original
+
+![alt text](image-5.png)
+
+# File Viewing & Management Scenarios
+
+4. Web application is failing, how would you view latest logs, continuously monitor updates.
+
+
+
+5. You suspect the application has database errors, how would you search the log file for ERROR.
+
+
+6. A configuration file is very large, which command would help you scroll through it page by page
+
+
+# Permissions & Ownership Scenarios
+
+7. a deployment script called deploy.sh fails with permission denied, how would you fix it?
+
+8. we want the owner to read, write and execute a file, which permission number would you use?
+
+9. a file belongs to the wrong user, how would you change ownership to another user.
+
+10. you accidentally gave everyone write access to a sensitive file. why is this dangerous?
+
+# Process Management Scenarios
+11.  a python application is consuming 95% CPU. which commands would help identify the process?
+
+12. a background process named "sleep" is running. how would you stop it?
+
+13. your server becomes slow, why is checking running processes important?
+
+14. you started a process accidentally in the background. How would you view background jobs?
+
+# Network & Connectivity scenarios
+15. A student cannot connect to the internet from the Linux VM> Which command would you use first to test connectivity?
+
+16. you need to know the IP address of your Linux server, which command would you use?
+
+17. a web server should be listening o port 80, which command helps confirm this?
+
+18. A website domain is not resolving correctly, which commands can help troubleshoot DNS?
+
+# SSH & Remote Access Scenarios
+19. You need to remotely manage a Linux server from Windows, which command would you use?
+
+20. you need to securely transfer a file from your local machine to a remote linux server, which command would you use?
+
+
+# Bonus Challenge Questions
+21. why is Linux heavily used in cloud computing and DevOps?
+
+22. what is the difference between "chmod 755" and "chmod 644"
+
+23. why is "chmod +x script.sh" important before running scripts?
+
+24. why is SSH considered more secure than older remote acess methods?
+
+25. why is process management important in Docker and Kubernetes environments?
+
+
 
