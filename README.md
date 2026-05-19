@@ -22,7 +22,7 @@ On app.log file we added some contents.
 INFO Server started \
 WARNING Disk almost  full \
 ERROR Database connection failed \
-INFO User login successful \
+INFO User login successful 
 
 # Task 4 - Copy Backup
 
@@ -33,17 +33,18 @@ to create a backup we used the "cp" command
 
 
 # PART 2 -File Viewing & Log Investigation
+
 # Task 5 - Investigate Logs
  
 This task wanted us to investigate the logs file that we created and find the errors and warning entries. we used the "find" command to do this.
 
 find . -name "app.log" -exec grep -n "warning" {} \; 
 
-find . - search from current directory
--name "app.log" - locate the file by name
--exec -execute a command on the found file
-grep "ERROR" - searches for ERROR entries
-{} - represents the found files
+find . - search from current directory\
+-name "app.log" - locate the file by name\
+-exec -execute a command on the found file\
+grep "ERROR" - searches for ERROR entries\
+{} - represents the found files\
 \; - ends the execute statement.
 
 ![alt text](/screenshots/image4.png)
@@ -55,7 +56,7 @@ we searched the warning entries on the app.log file.
 
 # Task 6 - Monitor Logs Live
 
-In this task we used the command "tail -f app.log " and added aome content to that file as we can see the content is being monitored in real life.
+In this task we used the command "tail -f app.log " and added some content to that file as we can see the content is being monitored in real life.
 
 ![alt text](/screenshots/image6.png)
 
@@ -119,7 +120,9 @@ By using the top command we are able to see the total number of processes the cp
 # PART 5 - Networking & Connectivity
 
 # Task 14 - Find Server IP
+
 By the use of "ip a" command we are able to see an ip address 
+
 ![alt text](/screenshots/image12.png)
 
 To see the hostaneme of the server we are using we run the command "hostname"
@@ -129,9 +132,11 @@ To see the hostaneme of the server we are using we run the command "hostname"
 
 # Task 15 - Test Connectivity
 To test our linux machine internet access we pinged the google.com domain and as we can see it reachable sonce we have response from that domain.
+
 ![alt text](/screenshots/image.png)
 
 # Task 16 - Verify Listening Ports
+
 we used the command ss -tulnp to verif listening ports
 
 ![alt text](/screenshots/image-1.png)
@@ -139,35 +144,70 @@ we used the command ss -tulnp to verif listening ports
 # PART 6 - SSH & SCP
 # Task 17 - Remote Access (Local to Remote)
 
+We logged in to our aws ec2 instance using the wsl in windows, we used ssh -i "key.perm" ubuntu@ec2-<public ip>.region.
+
 ![alt text](/screenshots/image-2.png)
+
+As we can see in the screenshot below we were logged in as user but after running this command we are in ubuntu user.
+
 ![alt text](/screenshots/image-3.png)
 
 
 # Task 18 -Secure  File Transfer
 
+To securely tranfer files from the local user which in our case is user to the Linux server in the cloud(remote) we used the command "scp" which is a command-line utility that allows secure, encrypted file transers between local host and a remote host(or between two remote hosts) using the secure shell(SSH) protocol
+
 ![alt text](/screenshots/image-4.png)
+
+We ran the command scp -i "my key pair.pem" -r /path/to/file/ ubuntu@<ip>:/home/ubuntu and we were able to trasfer the file Linux-Fundamentals to the remote host as  shown.
+
 ![alt text](/screenshots/image-5.png)
 
 # Task 19 - Retrieve File (Remote to Local)
 
+In his task we were to securely transer a file from the remote host to the local host and to do we ran the command "scp -i <key.pem>" ubuntu@<public ip>:/path/to/file /path/to/destination/ and we can see the file has started the download.
+
 ![alt text](/screenshots/image-6.png)
+
+we were downloading the app.log file and we can see that it has been listed in our directory.
 
 ![alt text](/screenshots/image-7.png)
 
 # PART 7 - Disk & System  Information
 
 # Task 20 - Check  System Resources 
-memory usage
+ - memory usage
+
+We used the "free -h" command this displays the memory usage and in a human readable format.
+
 ![alt text](/screenshots/image-8.png)
-Disk usage
+
+ - Disk usage
+
+The "df -h" displays disk usage for mounted filesystem in a human readable format, it shows the total disk space,used space, available space, usage percentage.
+
 ![alt text](/screenshots/image-9.png)
-uptime
+
+ - uptime
+
+ We used the "uptime" command which shows how long the system has been running and gives a quick overview of  system load.
+
 ![alt text](/screenshots/image-10.png)
-linux version
+
+ - linux version
+
+ For viewing the linux version we used the "uname -a" command to display detailed system and kernel information.
+
 ![alt text](/screenshots/image-11.png)
 
 # Task 21 - Analyze Storage
+
+The command du -sh ~/Linux-Fundamentals was used to check the total disk usage of a directory.
+
 ![alt text](/screenshots/image-12.png)
+
+With the command "df -h" we are able to view the available space on all mounted filesystem.
+
 ![alt text](/screenshots/image-13.png)
 
 
@@ -175,75 +215,103 @@ linux version
 
 # Task 22 - Create Backup Archive
 
+In this task we were to create a compressed file
+
+In our case we have compressed a file called devops-backup.tar.gz, We did that "tar -cvzf devops-backup.tar.gz devops-project"
+
+
 ![alt text](/screenshots/image-14.png)
 
 # Task 23 - Extract
+
+To extract a file we used the "tar -xzvf devops-backup.tar.gz -c /path/to/destination" this extracts the file that file to the restore directory which we can see in our screenshot below. 
 
 ![alt text](/screenshots/image-15.png)
 
 
 # LINUX_LAB
-
-![alt text](image.png)
-
-
+![alt text](/screenshots/lab_screensots/image.png)
 # PART 1 - FIND COMMAND
 
 # Task 1 
-in this task we have been asked to find all the .log files that we created at the beginning of the lab, we were to use the find command to do so.
+In this task we have been asked to find all the .log files that we created at the beginning of the lab, we were to use the find command to do so.
 
 ![alt text](/screenshots/lab_screensots/image1.png)
 
 # PART 2 - LOCATE COMMAND
+
 # Task 3
+
 we are to use the locate command to find a file auth.log
 
 ![alt text](/screenshots/lab_screensots/image4.png)
+
 # PART 3 - GREP COMMAND
+
 # Task 4
 
-In this task we are to find error message in app.log file.
+In this task we are to find error message in app.log file. We used the grep command to do so.
+
+grep -i "error" /path/to/file the -i is used for case sensitivity.
 
 ![alt text](/screenshots/lab_screensots/image2.png)
 
 # Task 5
+
 we are to find the warning text inside the app.log file.
+
 ![alt text](/screenshots/lab_screensots/image3.png)
 
 # Task 6
 
-we are to count the number of errors using the wc command by piping
-
-![alt text](/screenshots/lab_screensots/image5.png)
+We are to count the number of errors using the wc command by piping the results of grep we used the wc -l to do the count. In our lab we can see that we have four of the error count 
 
 ![alt text](/screenshots/lab_screensots/image6.png)
 
 # PART 4 - AWK COMMAND
 
 # Task 7
-on this task we are to print the timestamp in the file app.log file. 
+
+On this task we are to print the timestamp in the file app.log file. 
+We used the awk command. By using awk '{print $1, $2}' this prints out the columns 1 and 2 that contain the timestamp of the file.
 
 ![alt text](/screenshots/lab_screensots/image7.png)
 
 # Task 8
+
+grep "password for" auth.log | awk '{print $NF}' |sort 
+the Print $NF returns last word of each line
+"sort" sorts the extracted values alphabetically
+
 ![alt text](/screenshots/lab_screensots/image13.png)
+
 # Task 9
 
-On this task we rae to extract disk usage percentage from system.log
+On this task we have to extract disk usage percentage from system.log.
+we used the  "awk '/disk usage/{print $3}' system.log"
 
 ![alt text](/screenshots/lab_screensots/image8.png)
 
 # PART 5 - PIPING
 
 # Task 10
+ - piping enables the output of one command is used as the input for another
+In our case we did "grep "error" app.log | wc -l" this filters all lines containing ERROR and counts how many lines are returned.
 
 ![alt text](/screenshots/lab_screensots/image9.png)
 
 # Task 11
 
+grep "password for" auth.log | awk '{print $NF}' |sort 
+the Print $NF returns last word of each line
+"sort" sorts the extracted values alphabetically
+
 ![alt text](/screenshots/lab_screensots/image10.png)
 
 # Task 12
+
+we used the "grep "Failed password" auth.log | awk '{print $NF}' | sort | uniq -c""
+this command filters for failed login attempts only, extracts the username (last field), groups the identical usernames together and counts occurences per user.
 
 ![alt text](/screenshots/lab_screensots/image11.png)
 
@@ -251,12 +319,20 @@ On this task we rae to extract disk usage percentage from system.log
 
 # Task 13
 
+In this task we creates the loglist.text and added the app.log, auth.log and system.log text.
+
 ![alt text](/screenshots/lab_screensots/image12.png)
 
 # Task 14
+The loglist.txt contains the app.log, auth.log and system.log when we use the xargs command it converts the that into cat app.log, auth.log and system.log this printed all log contents sequentially. 
+
 ![alt text](/screenshots/lab_screensots/image14.png)
 
+
 # Task 15
+
+The "cat loglist.txt" reads the list of log files
+"xargs grep "ERROR"" converts the filenames into grep "ERROR" app.log auth.log system.log, Grep searches for the word ERROR.
 
 ![alt text](/screenshots/lab_screensots/image15.png)
 
@@ -273,30 +349,30 @@ identify disk issue
 1. I created a file in the wrong directory by accident, how would i move the fie to the correct directory?
  -to move a file we use the command "mv" to move a file from one directory to another
 
-![alt text](image.png)
+![alt text](/screenshots/scenario/image.png)
 
 2. A team needs a folder structure of logs, scripts and backup, how would all folders be created using one command.
 
  - To create a folder structure of three directories at once we use the "mkdir command"
  - in our case we did "mkdir logs script backup" and we created the three directories as shown.
 
-![alt text](image-1.png)
+![alt text](/screenshots/scenario/image-1.png)
 
 3. A backup file is consuming a lot of space, how would you locate, copy to backup directory and delete the original?
 
 - locate file
   - To locate a file we used the locate or find command 
 
-![alt text](image-3.png)
-![alt text](image-2.png)
+![alt text](/screenshots/scenario/image-3.png)
+![alt text](/screenshots/scenario/image-2.png)
 
 - copy to backup
 
-![alt text](image-4.png)
+![alt text](/screenshots/scenario/image-4.png)
 
 - delete the original
 
-![alt text](image-5.png)
+![alt text](/screenshots/scenario/image-5.png)
 
 # File Viewing & Management Scenarios
 
@@ -308,7 +384,6 @@ identify disk issue
 5. You suspect the application has database errors, how would you search the log file for ERROR.
 
   - i would use the grep command on the file.
-
 
 6. A configuration file is very large, which command would help you scroll through it page by page.
 
@@ -404,7 +479,7 @@ ss -tulnp is a command used to display listening ports that, but to specifically
 
 25. why is process management important in Docker and Kubernetes environments?
 
- -Process management is important in Docker and Kubernetes because it helps control and monitor running application processes, ensuring efficient use of CPU and memory. It also enables automatic restart of failed processes, supports scaling of applications, and enforces resource limits to maintain system stability and performance.
+ - Process management is important in Docker and Kubernetes because it helps control and monitor running application processes, ensuring efficient use of CPU and memory. It also enables automatic restart of failed processes, supports scaling of applications, and enforces resource limits to maintain system stability and performance.
 
 
 
